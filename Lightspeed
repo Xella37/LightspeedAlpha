@@ -588,7 +588,7 @@ end
 
 function setShipAI(tier)
 	local eShipType = math.random(1, 5) + 5 * (tier - 1)
-	eShip = deepCopy(eShips[eShipType])
+	eShip = deepCopy(eShips[math.min(eShipType, #eShips)])
 	eShip.hull = eShip.maxHull
 end
 
