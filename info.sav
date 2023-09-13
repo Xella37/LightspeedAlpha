@@ -1,0 +1,7 @@
+{
+  killCount = 90,
+  unlockedShips = {
+    true,
+    true,
+  },
+}
